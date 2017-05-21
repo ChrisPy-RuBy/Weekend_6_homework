@@ -1,10 +1,9 @@
-package New_attempt; 
 
-public enum CardValue {
+public enum ValueType {
   ACE,
   KING,
   QUEEN,
-  JACK, 
+  JACK,
   TEN,
   NINE,
   EIGHT,
@@ -14,4 +13,5 @@ public enum CardValue {
   FOUR,
   THREE,
   TWO
-}
+} 
+

@@ -1,4 +1,4 @@
 public interface Dealable {
-  public String getSuite(); 
-  public int getValue();
+  public SuiteType getSuite(); 
+  public ValueType getValue();
 }

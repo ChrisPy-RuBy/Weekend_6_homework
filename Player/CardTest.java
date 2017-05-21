@@ -8,18 +8,18 @@ public class CardTest {
 
   @Before
   public void before() {
-    card = new Card("Clubs", 10);
+    card = new Card(SuiteType.CLUBS, ValueType.TEN);
   }
 
 @Test
 public void getSuite() {
   // methods in Tests always return void!
-  assertEquals("Clubs", card.getSuite());
+  assertEquals(SuiteType.CLUBS, card.getSuite());
 }
 
 @Test
 public void getValue() {
-  assertEquals(10, card.getValue());
+  assertEquals(ValueType.TEN, card.getValue());
 }
 
 }

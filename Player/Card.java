@@ -1,19 +1,21 @@
+// package Player;
+
 public class Card implements Dealable {
 
-  private String suite;
-  private int value;
+  private SuiteType suite;
+  private ValueType value;
 
-  public Card(String suite, int value) {
+  public Card(SuiteType suite, ValueType value) {
     this.suite = suite;
     this.value = value;
   }
 
-  public String getSuite() {
-    return suite;
+  public SuiteType getSuite() {
+    return this.suite;
   }
 
-  public int getValue() {
-    return value;
+  public ValueType getValue() {
+    return this.value;
   }
 
 }
