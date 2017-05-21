@@ -15,4 +15,11 @@ public String getGameName() {
   return this.gameName;
 }
 
+public int numberOfPlayers() {
+  return players.size();
+}
+ public void addPlayerToGame(Player player) {
+  this.players.add(player);
+ }
+
 }
