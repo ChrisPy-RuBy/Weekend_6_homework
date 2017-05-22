@@ -22,5 +22,12 @@ public void getValue() {
   assertEquals(ValueType.TEN, card.getValue());
 }
 
+@Test
+public void getValueScore() {
+  assertEquals(10, card.getValueScore());
+}
+
+
+
 }
 

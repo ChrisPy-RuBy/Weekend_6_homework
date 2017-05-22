@@ -18,4 +18,8 @@ public class Card implements Dealable {
     return this.value;
   }
 
+  public int getValueScore() {
+    return this.value.score;
+  }
+
 }

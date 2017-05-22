@@ -46,6 +46,13 @@ public void bothPlayersGetCard() {
   assertEquals(1, player2.handCount());
 }
 
+@Test
+public void getCardValue() {
+  player1.dealCard(card1);
+  ValueType value = player1.revealValue();
+  assertEquals(value, ValueType.TEN);
+}
+
 
 }
 

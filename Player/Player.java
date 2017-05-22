@@ -27,4 +27,15 @@ public int handCount() {
 public void dealCard(Dealable card) {
   this.hand.add(card);
 }
+
+public ValueType revealValue() {
+  ValueType value = null;
+  for (Dealable card : hand) {
+    value = card.getValue(); 
+  } 
+  return value;
+}
+
+
+
 }
