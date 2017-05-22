@@ -52,29 +52,21 @@ public void getPlayerCardValue() {
 }
 
 @Test 
-public void comparePlayerScores() {
+public void twoPlayersCardValues() {
   player1.dealCard(card1);
+  game.addPlayerToGame(player1);
   player2.dealCard(card2);
-  assertEquals("player1 wins", game.comparePlayerScores());
+  game.addPlayerToGame(player2);
+  ValueType details = game.revealPlayersCardDetails();
+  assertEquals(details, ValueType.TWO);
+
 }
 
-
-// @Test
-// public void canPrintAllCameraDetails() {
-//   photographer.addCamera(analogueCamera);
-//   photographer.addCamera(digitalCamera);
-//   String details = photographer.printAllCameraDetails();
-//   assertEquals(details, "Pentax K-01, 35mm, Canon E0S, 30.4 pixels, ");
-// }
-
-
-
-// public String printAllCameraDetails() {
-//   String details = "";
-//   for (Printable camera : cameras) {
-//     details += camera.printDetails() + ", ";
-//   }
-//   return details;
+// @Test 
+// public void comparePlayerScores() {
+//   player1.dealCard(card1);
+//   player2.dealCard(card2);
+//   assertEquals("player1 wins", game.comparePlayerScores());
 // }
 
 }

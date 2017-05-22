@@ -32,10 +32,12 @@ public class Game {
     return value;
   }
 
-  public String comparePlayerScores() {
-    
-    return "player1 wins";
-  }
+  // do I need to create a new array 
+
+  // public String comparePlayerScores() {
+
+  //   return "player1 wins";
+  // }
 
 
 
